@@ -39,11 +39,11 @@ class AddItemView: UIViewController, FloatingPanelControllerDelegate {
     
     override func loadView() {
         ui.delegate = self
-//        ui.didTapGo = {
-//            let storyboard = UIStoryboard(name: "StaticViewBoard", bundle: Bundle.main)
-//            let sta: StaticView = storyboard.instantiateViewController(withIdentifier: "StaticView") as! StaticView
-//            self.navigationController?.pushViewController(sta, animated: true)
-//        }
+        ui.didTapGo = {
+            let storyboard = UIStoryboard(name: "StaticViewBoard", bundle: Bundle.main)
+            let sta = storyboard.instantiateViewController(withIdentifier: "MazadDetailsVC") as! MazadDetailsVC
+            self.navigationController?.pushViewController(sta, animated: true)
+        }
         view = ui
     }
     
