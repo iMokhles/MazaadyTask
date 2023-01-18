@@ -33,7 +33,6 @@ class AddItemUI : UIView {
         tbl.dataSource = self
         tbl.register(DropdownViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tbl.translatesAutoresizingMaskIntoConstraints = false
-        tbl.tableFooterView = goButton
         return tbl
     }()
     
@@ -59,6 +58,7 @@ extension AddItemUI {
     private func setupUIElements() {
         backgroundColor = .white
         addSubview(tableView)
+        addSubview(goButton)
     }
     
     private func setupConstraints() {
@@ -68,6 +68,8 @@ extension AddItemUI {
         
         goButton.snp.makeConstraints { maker in
             maker.top.equalTo(tableView.snp.bottom)
+            maker.bottom.equalTo(-20)
+            maker.centerX.equalToSuperview()
         }
     }
     

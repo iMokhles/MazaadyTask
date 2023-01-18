@@ -143,20 +143,23 @@ extension CategoryUI: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        var category = self.objects![indexPath.row];
-        if filtered != nil {
-            category = self.filtered![indexPath.row];
-        }
-        cell.textLabel?.text = category.name
-        
-        let mainCat = PersistenceManager.getMainCategory();
-        let subCat = PersistenceManager.getSubCategory();
+        if (self.objects != nil) {
+            var category = self.objects![indexPath.row];
+            if filtered != nil {
+                category = self.filtered![indexPath.row];
+            }
+            cell.textLabel?.text = category.name
+            
+            let mainCat = PersistenceManager.getMainCategory();
+            let subCat = PersistenceManager.getSubCategory();
 
-        if (isMainCategories) {
-            cell.accessoryType = (mainCat != nil && mainCat?.id == category.id) ? .checkmark : .none
-        } else {
-            cell.accessoryType = (subCat != nil && subCat?.id == category.id) ? .checkmark : .none
+            if (isMainCategories) {
+                cell.accessoryType = (mainCat != nil && mainCat?.id == category.id) ? .checkmark : .none
+            } else {
+                cell.accessoryType = (subCat != nil && subCat?.id == category.id) ? .checkmark : .none
+            }
         }
+        
 
         return cell
     }

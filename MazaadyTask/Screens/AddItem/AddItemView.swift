@@ -39,11 +39,11 @@ class AddItemView: UIViewController, FloatingPanelControllerDelegate {
     
     override func loadView() {
         ui.delegate = self
-        ui.didTapGo = {
-            let storyboard = UIStoryboard(name: "StaticViewBoard", bundle: Bundle.main)
-            let sta: StaticView = storyboard.instantiateViewController(withIdentifier: "StaticView") as! StaticView
-            self.navigationController?.pushViewController(sta, animated: true)
-        }
+//        ui.didTapGo = {
+//            let storyboard = UIStoryboard(name: "StaticViewBoard", bundle: Bundle.main)
+//            let sta: StaticView = storyboard.instantiateViewController(withIdentifier: "StaticView") as! StaticView
+//            self.navigationController?.pushViewController(sta, animated: true)
+//        }
         view = ui
     }
     
@@ -289,17 +289,24 @@ extension AddItemView : AddItemUIDelegate {
             view.hideAllToasts()
             view.makeToast("برجاء إختيار تصنيف")
         } else {
+            categoriesVC.ui.objects = nil
+            DispatchQueue.main.async {
+                categoriesVC.ui.tableView.reloadData()
+            }
             categoriesVC.ui.isMainCategories = false
             categoriesVC.ui.loader.startAnimating()
-            categoriesVC.ui.objects = nil
             categoriesVC.viewModel.fetchSubCategoriesData(subCategories: mainCategorySelected?.children)
             DispatchQueue.main.async {
                 categoriesVC.ui.tableView.reloadData()
             }
             categoriesVC.ui.titleLabel.text = "التصنيف الفرعي"
-            showCategoriesView()
-            fpcCategories.show(animated: true) { [weak self] in
-                self!.fpcCategories.didMove(toParent: self)
+            
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0) { [weak self] in
+                self!.showCategoriesView()
+                self!.fpcCategories.show(animated: true) { [weak self] in
+                    self!.fpcCategories.didMove(toParent: self)
+                }
             }
         }
     }
