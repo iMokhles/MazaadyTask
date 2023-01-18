@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="gTV-IL-0wX" customClass="BetCollectionViewCell" customModule="MazaadyTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoPath - Copy (6)" translatesAutoresizingMaskIntoConstraints="NO" id="til-7G-pee">
+                        <rect key="frame" x="326" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="BqT-gZ-WRi"/>
+                            <constraint firstAttribute="height" constant="44" id="sAh-co-W7e"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المزايد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x33-bN-af6">
+                        <rect key="frame" x="258" y="0.0" width="60" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="vnQ-y7-eli"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.12941176469999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:59:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylz-ya-j6b">
+                        <rect key="frame" x="271" y="24" width="47" height="14"/>
+                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="12"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyF-E1-5aL">
+                        <rect key="frame" x="0.0" y="6" width="55" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPz-D8-HjB">
+                                <rect key="frame" x="8.5" y="3" width="38" height="26"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="22"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.73725490199999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.73725490199999999" blue="0.0039215686269999999" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="DAT-9U-MJC"/>
+                            <constraint firstItem="ZPz-D8-HjB" firstAttribute="centerY" secondItem="jyF-E1-5aL" secondAttribute="centerY" id="Oa1-yA-CLq"/>
+                            <constraint firstAttribute="width" constant="55" id="SUf-Td-JMI"/>
+                            <constraint firstItem="ZPz-D8-HjB" firstAttribute="centerX" secondItem="jyF-E1-5aL" secondAttribute="centerX" id="aJx-PQ-FfQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="til-7G-pee" firstAttribute="leading" secondItem="x33-bN-af6" secondAttribute="trailing" constant="8" id="0JD-nC-acI"/>
+                <constraint firstItem="x33-bN-af6" firstAttribute="top" secondItem="til-7G-pee" secondAttribute="top" id="JCi-ts-24O"/>
+                <constraint firstItem="ylz-ya-j6b" firstAttribute="top" secondItem="x33-bN-af6" secondAttribute="bottom" constant="6" id="PSW-HX-Ka0"/>
+                <constraint firstItem="ylz-ya-j6b" firstAttribute="trailing" secondItem="x33-bN-af6" secondAttribute="trailing" id="axn-LJ-gfa"/>
+                <constraint firstAttribute="trailing" secondItem="til-7G-pee" secondAttribute="trailing" id="eMr-xg-Bvr"/>
+                <constraint firstItem="jyF-E1-5aL" firstAttribute="centerY" secondItem="til-7G-pee" secondAttribute="centerY" id="gr9-qS-a7o"/>
+                <constraint firstItem="jyF-E1-5aL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gw2-ft-aa3"/>
+                <constraint firstItem="til-7G-pee" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wlm-ZK-wQi"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="NoPath - Copy (6)" width="44" height="44"/>
+    </resources>
+</document>
