@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435781E5297D8A5C000F6B17 /* BiddersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435781DF297D8A5C000F6B17 /* BiddersCell.xib */; };
+		435781E6297D8A5C000F6B17 /* BiddersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435781E0297D8A5C000F6B17 /* BiddersCell.swift */; };
+		435781E7297D8A5C000F6B17 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435781E1297D8A5C000F6B17 /* ProductCell.swift */; };
+		435781E8297D8A5C000F6B17 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435781E2297D8A5C000F6B17 /* SliderCell.swift */; };
+		435781E9297D8A5C000F6B17 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435781E3297D8A5C000F6B17 /* ProductCell.xib */; };
+		435781EA297D8A5C000F6B17 /* MazadDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435781E4297D8A5C000F6B17 /* MazadDetailsVC.swift */; };
 		438DBBBF2976F73100238628 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DBBBB2976F73100238628 /* OptionsView.swift */; };
 		438DBBC12976F73100238628 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DBBBD2976F73100238628 /* Options.swift */; };
 		438DBBC22976F73100238628 /* OptionsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DBBBE2976F73100238628 /* OptionsUI.swift */; };
@@ -177,6 +183,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		435781DF297D8A5C000F6B17 /* BiddersCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BiddersCell.xib; sourceTree = "<group>"; };
+		435781E0297D8A5C000F6B17 /* BiddersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiddersCell.swift; sourceTree = "<group>"; };
+		435781E1297D8A5C000F6B17 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		435781E2297D8A5C000F6B17 /* SliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
+		435781E3297D8A5C000F6B17 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		435781E4297D8A5C000F6B17 /* MazadDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazadDetailsVC.swift; sourceTree = "<group>"; };
 		438DBBBB2976F73100238628 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		438DBBBD2976F73100238628 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		438DBBBE2976F73100238628 /* OptionsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsUI.swift; sourceTree = "<group>"; };
@@ -364,6 +376,18 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		435781DE297D8A5C000F6B17 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				435781DF297D8A5C000F6B17 /* BiddersCell.xib */,
+				435781E0297D8A5C000F6B17 /* BiddersCell.swift */,
+				435781E1297D8A5C000F6B17 /* ProductCell.swift */,
+				435781E2297D8A5C000F6B17 /* SliderCell.swift */,
+				435781E3297D8A5C000F6B17 /* ProductCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		438DBBAE2976F6D000238628 /* Options */ = {
@@ -758,6 +782,8 @@
 		438DBCC929787E3B00238628 /* BAD_COPY_Static */ = {
 			isa = PBXGroup;
 			children = (
+				435781DE297D8A5C000F6B17 /* Cells */,
+				435781E4297D8A5C000F6B17 /* MazadDetailsVC.swift */,
 				438DBCCE29787F2B00238628 /* Nibs */,
 				438DBCCC29787F0200238628 /* StaticView.swift */,
 				438DBCD72978837D00238628 /* StaticViewBoard.storyboard */,
@@ -1039,10 +1065,12 @@
 			files = (
 				438DBC93297756C200238628 /* Countries.bundle in Resources */,
 				43E289CC2975E09A002CF264 /* LaunchScreen.storyboard in Resources */,
+				435781E5297D8A5C000F6B17 /* BiddersCell.xib in Resources */,
 				438DBCD82978837D00238628 /* StaticViewBoard.storyboard in Resources */,
 				438DBCD329787F2B00238628 /* ProductCollectionViewCell.xib in Resources */,
 				438DBCD529787F2B00238628 /* BetCollectionViewCell.xib in Resources */,
 				43E289C92975E09A002CF264 /* Assets.xcassets in Resources */,
+				435781E9297D8A5C000F6B17 /* ProductCell.xib in Resources */,
 				43E28A0B2975FC07002CF264 /* countriesKeys.json in Resources */,
 				438DBCB9297756C200238628 /* MMBAlertsPickersLocalizable.strings in Resources */,
 			);
@@ -1171,10 +1199,12 @@
 				438DBC85297756C200238628 /* UIScreen.swift in Sources */,
 				438DBCAF297756C200238628 /* AssetsCollection.swift in Sources */,
 				438DBCD629787F2B00238628 /* ProductCollectionViewCell.swift in Sources */,
+				435781E8297D8A5C000F6B17 /* SliderCell.swift in Sources */,
 				438DBC80297756C200238628 /* UIImageView.swift in Sources */,
 				43E28A072975F9A8002CF264 /* CategoriesResponse.swift in Sources */,
 				438DBC6E297756C100238628 /* BlurView.swift in Sources */,
 				438DBC5B297756C100238628 /* String+Extensions.swift in Sources */,
+				435781E7297D8A5C000F6B17 /* ProductCell.swift in Sources */,
 				438DBC5A297756C100238628 /* Date+Extension.swift in Sources */,
 				438DBC8B297756C200238628 /* ItemBaseController.swift in Sources */,
 				438DBC60297756C100238628 /* UIApplication+Extensions.swift in Sources */,
@@ -1208,6 +1238,7 @@
 				438DBC8A297756C200238628 /* GalleryDisplacedViewsDataSource.swift in Sources */,
 				438DBCD429787F2B00238628 /* BetCollectionViewCell.swift in Sources */,
 				438DBC5C297756C100238628 /* UITextView+Extensions.swift in Sources */,
+				435781E6297D8A5C000F6B17 /* BiddersCell.swift in Sources */,
 				438DBBC12976F73100238628 /* Options.swift in Sources */,
 				438DBCAD297756C200238628 /* AssetsCollection+ChangesObserver.swift in Sources */,
 				438DBC63297756C100238628 /* Optional+Extensions.swift in Sources */,
@@ -1229,6 +1260,7 @@
 				438DBC8E297756C200238628 /* Slider.swift in Sources */,
 				438DBC9F297756C200238628 /* LocationPickerViewController.swift in Sources */,
 				438DBCB2297756C200238628 /* TelegramPickerViewController.swift in Sources */,
+				435781EA297D8A5C000F6B17 /* MazadDetailsVC.swift in Sources */,
 				438DBC7A297756C200238628 /* UIColor.swift in Sources */,
 				438DBCBE297756C200238628 /* PickerStyle.swift in Sources */,
 				438DBC5E297756C100238628 /* UIImage+Extensions.swift in Sources */,
